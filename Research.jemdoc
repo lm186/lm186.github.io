@@ -1,0 +1,135 @@
+# jemdoc: menu{MENU}{Research.html}, title{Li Ma - Research}
+= Li Ma
+
+=== Research interests
+
+- Nonparametric modeling and inference
+- Multi-scale inference
+- Recursive partitioning and tree-related methods
+# - Large-scale hypothesis testing
+- Statistical modeling of biomedical data sets, especially microbiome sequencing data and flow cytometry\n
+
+
+A recent methodological focus of my research is on using multi-scale techniques to construct flexible probability models that can be applied to massive data sets. Traditional nonparametric approaches, while enjoying many established theoretical properties, are often computationally intractable for big data. Multi-scale inference provides a general framework for tackling the computational bottleneck, while preserving the theoretical guarantees enjoyed by classical methods.
+
+My applied interest focuses on modeling complex data sets from biomedical experiments. In particular, current efforts have been devoted to modeling and analyzing data from microbiome sequencing experiments and flow cytometry.
+
+## /An easy way to find out more about my research is by watching the 15-min videos given by group members that accompany recent papers./
+
+
+## I am most interested in /likelihood-based/ and /Bayesian nonparametric inference/. 
+## Some specific topics of interest are /high dimensional density estimation/ and /two 
+## sample comparison/. Most of my research is motivated by problems in /genetic epidemiological 
+## studies/ of common complex diseases.
+
+## === Industry experience
+## 
+## - Google search evaluation research (Summer 2009)
+
+=== Support
+My research group is currently supported by both the NSF (Statistics Program grant DMS-2013930, CDS\&E Program grant DMS-2152999, CAREER Award grant DMS-1749789, Engineering Research Centers grant EEC-2133504) and the NIH (NIGMS grant R01-GM135440).
+#I am also supported by NIH grant 1R01AG066719-01 (PI: Sung) and NIH grant 1R03-AG060082 (PI: Siddiqui) for my collaborative applied work on microbiome analysis.
+Prior support: NSF grants DMS-1309057, DMS-1612889, and a [http://research.google.com/research-outreach.html\#/research-outreach/faculty-engagement/faculty-research-awards Google Faculty Research Award].
+
+=== Preprints # (under review)
+
+Wang Z, Awaya N, and Ma L. (2024) Generative modeling of conditional densities through additive tree flows. [https://arxiv.org/abs/2406.05260 \[arxiv\]]
+
+Horiguchi A, Ma L, and Szabo B. (2024) Sampling depth trade-off in function estimation under a two-level design. [http://arxiv.org/abs/2310.02968 \[arxiv\]]
+
+Horiguchi A, Chan C, and Ma L. (2023) A tree perspective on stick-breaking models in covariate-dependent mixtures. [https://arxiv.org/abs/2208.02806 \[arxiv\]]
+
+Wang Z, Mao J, and Ma L. (2022) Microbiome compositional analysis with logistic-tree normal models. [https://www.imsi.institute/videos/microbiome-analyses-through-tree-based-models-for-high-dimensional-compositions/ \[*talk*\]][https://vimeo.com/570045756 \[*15-min video*\]][https://arxiv.org/abs/2106.15051 \[arxiv\]][https://github.com/MaStatLab/LTN \[R package\]][https://github.com/MaStatLab/LTN_analysis \[numerical examples\]] /Winner of a student\/postdoc best paper award at 2021 ISBA World Meeting./
+
+
+
+=== Publications
+
+Awaya N and Ma L. (2024) Unsupervised tree boosting for learning probability distributions. /To appear in Journal of Machine Learning Research./ [https://youtu.be/02nZUxF8EMs?t=1306 \[talk\]][https://arxiv.org/abs/2101.11083 \[arxiv\]][https://github.com/MaStatLab/boostPM \[R package\]] /Winner of a student\/postdoc best paper award at 2021 ISBA World Meeting./
+
+Liu L and Ma L. (2024) Spatial adaptation by Bayesian unsupervised trees. /Accepted to 37th Annual Conference on Learning Theory (COLT 2024)./
+
+Liu R, Li M, and Ma L. (2024) Efficient in-situ image and video compression through probabilistic image representation. /Signal Processing./ Vol. 215, 109268. [https://doi.org/10.1016/j.sigpro.2023.109268 \[online\]][https://arxiv.org/abs/1912.05622 \[arxiv\]][https://github.com/xylimeng/CARP \[Matlab code\]] 
+
+Gorsky S, Chan C, and Ma L. (2024) Coarsened mixtures of hierarchical skew normal kernels for flow cytometry analyses. /Bayesian Analysis./ Vol.19, No.2, 439 - 463. [https://vimeo.com/571655586 \[*15-min video*\]][https://doi.org/10.1214/22-BA1356 \[online\]][https://cran.r-project.org/web/packages/COMIX/index.html \[R package\]]
+
+Awaya N and Ma L. (2024) Hidden Markov Pólya trees for high-dimensional distributions. /Journal of the American Statistical Association, Theory and Methods./  Vol.119, No.545, 189–201. [https://doi.org/10.1080/01621459.2022.2105223 \[online\]][https://arxiv.org/abs/2011.03121 \[arxiv\]][https://github.com/MaStatLab/SMCMP \[R package\]][Research/talks/slss_pt.pdf \[slides\]]
+
+Ji Z and Ma L. (2023) Controlling taxa abundance improves metatranscriptomics differential analysis. /BMC Microbiology. 24:60./ [http://dx.doi.org/10.1186/s12866-023-02799-9 \[online\]]
+
+LeBlanc P and Ma L. (2023) Microbiome subcommunity learning with logistic-tree normal latent Dirichlet allocation. /Biometrics./ Vol. 79, Iss. 3, 2321-2332. [https://doi.org/10.1111/biom.13772 \[online\]][https://arxiv.org/abs/2109.05386 \[arxiv\]][https://github.com/PatrickLeBlanc/LTNLDA \[R package\]]
+
+Gorsky S and Ma L. (2022) Multiscale Fisher's independence test for multivariate dependence (with discussion). /Biometrika./ Vol. 109, No. 3, 569–587. [https://doi.org/10.1093/biomet/asac013 \[online\]][https://arxiv.org/abs/1806.06777 \[arxiv\]] [https://cran.r-project.org/web/packages/MultiFit/index.html \[R package\]]
+
+Gorsky S and Ma L. (2022) Rejoinder: "Multiscale Fisher's independence test for multivariate dependence." /Biometrika./ Vol. 109, No. 3, 605-609. [https://doi.org/10.1093/biomet/asac034 \[online\]]
+
+Mao J and Ma L. (2022) Dirichlet-tree multinomial mixtures for clustering microbiome compositions. /Annals of Applied Statistics./ Vol. 16, No. 3, 1476-1499. [https://www.imsi.institute/videos/microbiome-analyses-through-tree-based-models-for-high-dimensional-compositions/ \[*talk*\]][https://vimeo.com/570047013 \[*15-min video*\]][https://doi.org/10.1214/21-AOAS1552 \[online\]][https://arxiv.org/abs/2008.00400 \[arxiv\]][https://github.com/MaStatLab/DTMM \[R package\]][https://github.com/MaStatLab/DTMM_reproducible \[numerical examples\]]
+
+Siddiqui N, Ma L, Brubaker L, Mao J, Hoffman C, Wang Z, Karstens L. (2022) Updating urinary microbiome analyses to enhance biologic interpretation. /Frontiers in Cellular and Infection Microbiology. 12:789439. / [https://doi.org/10.3389/fcimb.2022.789439 \[online\]] #[https://doi.org/10.1101/2021.09.30.21264391 \[bioRxiv\]]
+
+Vaughan M, Zemtsov G.E., Dahl E.M., Karstens L, Ma L, Siddiqui N. (2022) Concordance of urinary microbiota detected by 16S rRNA amplicon sequencing versus expanded quantitative urine culture. /American Journal of Obstetrics \& Gynecology./ [https://doi.org/10.1016/j.ajog.2022.06.031 \[online\]]
+
+Luo K, Zhong J, Safi A, Hong L.K., Tewari A.K., Song L, Reddy T.E., Ma L, Crawford G.E., and Hartemink A.J. (2022) 
+Quantitative occupancy of myriad transcription factors from one DNase experiment enables efficient comparisons across conditions. /Genome Research./ 32: 1183-1198. [https://genome.cshlp.org/content/32/6/1183 \[online\]][https://doi.org/10.1101/2020.06.28.171587 \[bioRxiv\]]
+
+Li M and Ma L. (2022) Learning asymmetric and local features in multi-dimensional data through wavelets with recursive partitioning. /IEEE Transactions on Pattern Analysis and Machine Intelligence./ Vol. 44, No. 11, 7674-7687. [https://doi.org/10.1109/TPAMI.2021.3110403 \[online\]][https://arxiv.org/abs/1711.00789 \[arxiv\]][https://github.com/xylimeng/WARP \[Matlab toolbox \& R package\]]
+
+Vaughan M, Mao J, Karstens L, Ma L, Amundsen C, Schmader K, Siddiqui N. (2021). The urinary microbiome in postmenopausal women with recurrent urinary tract infections. /Journal of Urology./ Vol. 206, No. 5, 1222-1231. [https://www.auajournals.org/doi/abs/10.1097/JU.0000000000001940 \[online\]][https://doi.org/10.1101/2020.12.21.423901 \[bioRxiv\]]
+
+Ramalingam S, Siamakpour-Reihani S, Bohannan L, Ren Y, Sibley, Sheng J, Ma L, Nixon AB, Lyu J, Parker DC, Bain B, Muehlbauer M, Ilkayeva O, Kraus VB, Huebner J, Spitzer T, Brown J, Peled J, van den Brink M, Gomes A, Choi T, Gasparetto C, Horwitz M, Long G, Lopez R, Rizzieri D, Sarantopoulos S, Chao N, and Sung AD. (2021). A phase 2 trial of the somatostatin analog pasireotide to prevent GI toxicity and acute GVHD in allogeneic hematopoietic stem cell transplant. /PLOS ONE./ Vol. 16, No. 6. [https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0252995 \[online\]].
+
+Giri V, Kegerreis K, Ren Y, Bohannon L, Lobaugh-Jin E, Messina J, Matthews A, Mowery Y, Sito E, Lassiter M, Saullo J, Jung S, Ma L, Greenberg M, Andermann T, van den Brink M, Peled J, Gomes A, Choi T, Gasparetto C, Horwitz M, Long G, Lopez R, Rizzieri D, Sarantopoulos S, Chao N, Allen D, and Sung A. (2021). Chlorhexidine gluconate bathing reduces the incidence of bloodstream infections in adults undergoing inpatient hematopoietic cell transplantation. /Transplantation and Cellular Therapy./ Vol. 27, No. 1, 262e1-e11. [https://doi.org/10.1016/j.jtct.2021.01.004 \[online\]]
+
+Liu R, Li M, and Ma L. (2020) CARP: Compression through adaptive recursive partitioning for multi-dimensional images. /CVPR 2020: IEEE\/CVF Conference on Computer Vision and Pattern Recognition./ [https://openaccess.thecvf.com/content_CVPR_2020/papers/Liu_CARP_Compression_Through_Adaptive_Recursive_Partitioning_for_Multi-Dimensional_Images_CVPR_2020_paper.pdf \[online\]][https://github.com/xylimeng/CARP \[Matlab code\]]
+
+Christensen J and Ma L. (2020) A Bayesian hierarchical model for related densities using Pólya trees. /
+Journal of the Royal Statistical Society. Series B./, Vol. 82, 127-153. [https://doi.org/10.1111/rssb.12346 \[online\]] [https://arxiv.org/abs/1710.01702 \[preprint\]] [https://github.com/MaStatLab/HAPT-package \[R package\]]
+
+Mao J, Chen Y, and Ma L. (2020) Bayesian graphical compositional regression for microbiome data. /Journal of the American Statistical Association, Applications and Case Studies./ Vol. 115, No. 530, 610-624. [https://www.imsi.institute/videos/microbiome-analyses-through-tree-based-models-for-high-dimensional-compositions/ \[*talk*\]][https://doi.org/10.1080/01621459.2019.1647212 \[online\]][https://arxiv.org/abs/1712.04723 \[preprint\]][https://github.com/MaStatLab/BGCR \[R package\]][https://github.com/MaStatLab/BGCR_analysis \[Source code for examples\]]
+
+Ma L. (2019) Discussion on "Latent Nested Nonparametric Priors" by Camerlanghi et al. /Bayesian Analysis./ Vol. 14, No. 4, 1303-1356. [https://www.doi.org/10.1214/19-BA1169 \[online\]][files/discussion_on_LNNP.pdf \[preprint\]]
+
+Ma L and Mao J. (2019) Fisher exact scanning for dependency. /Journal of the American Statistical Association, Theory and Methods./ Vol. 114, No. 525, 245-258. [https://doi.org/10.1080/01621459.2017.1397522 \[online\]][http://arxiv.org/abs/1608.07885 \[preprint\]][https://github.com/MaStatLab/FES \[R code\]]
+
+Soriano J and Ma L. (2019) Mixture modeling on related samples through psi-stick breaking and kernel perturbation. /Bayesian Analysis/. Vol. 14, No.1, 161-180. [https://projecteuclid.org/euclid.ba/1524124868 \[online\]][https://github.com/jacsor/cremid \[R package\]][https://github.com/jacsor/MPG-examples \[examples\]]
+
+Ma L and Soriano J. (2018) Analysis of distributional variation through multi-scale Beta-Binomial modeling. /Journal of Computational and Graphical Statistics/. Vol. 27, No. 3, 529-541. [https://doi.org/10.1080/10618600.2017.1402774 \[online\]][http://arxiv.org/abs/1604.01443 \[preprint\]][https://cran.r-project.org/web/packages/MRS/index.html \[R package\]]
+
+Tang Y, Ma L, and Nicolae DL. (2018) A phylogenetic scan test on Dirichlet-tree multinomial model for microbiome data. /Annals of Applied Statistics/. Vol. 12, No. 1, 1-26. [https://projecteuclid.org/euclid.aoas/1520564463 \[online\]][https://arxiv.org/pdf/1610.08974.pdf \[preprint\]][https://github.com/yunfantang/phyloDM \[R code\]]
+
+Ma L and Soriano J. (2018) Efficient functional ANOVA through wavelet-domain Markov groves. /Journal of the American Statistical Association, Theory and Methods./ Vol. 113, No. 3, 802-818. [http://amstat.tandfonline.com/doi/full/10.1080/01621459.2017.1286241?src=recsys \[online\]][https://cran.r-project.org/web/packages/grove/index.html \[R package\]]
+
+Soriano J and Ma L. (2017) Probabilistic multi-resolution scanning for two-sample differences. /Journal of the Royal Statistical Society. Series B./ Vol. 79, No. 2, 547-572. [http://onlinelibrary.wiley.com/doi/10.1111/rssb.12180/abstract \[online\]][https://cran.r-project.org/web/packages/MRS/index.html \[R package\]]
+
+Ma L. (2017) Recursive partitioning and multi-scale modeling on conditional densities. /Electronic Journal of Statistics/. Vol. 11, No. 1, 1297-1325. [http://projecteuclid.org/euclid.ejs/1492135235 \[online\]][https://github.com/MaStatLab/PTT \[R package\]]
+
+Ma L. (2017) Adaptive shrinkage in Pólya tree type models. /Bayesian Analysis./ Vol. 12, No. 3, 779-805. (/Featured in the editor's invited session "Highlights from Bayesian Analysis" at JSM 2017.)/
+[https://projecteuclid.org/euclid.ba/1473276260 \[online\]][files/APT_supp.pdf \[supplement\]][https://github.com/MaStatLab/PTT \[R package\]]
+
+Ma L. (2015) Scalable Bayesian model averaging through local information propagation. /Journal of the American Statistical Association, Theory and Methods/. Vol. 110, No. 510, 795-809. [http://www.tandfonline.com/doi/full/10.1080/01621459.2014.980908 \[online\]][http://arxiv.org/abs/1403.2397 \[preprint\]][https://github.com/MaStatLab/LIPS \[R package\]]
+
+Ma L. (2013) Adaptive testing of conditional association through recursive mixture modeling. /Journal of the American Statistical Association, Theory and Methods/. Vol. 108, No. 504, 1493-1505. [http://www.tandfonline.com/doi/full/10.1080/01621459.2013.838899 \[online\]][https://github.com/MaStatLab/remcat \[R package\]]
+
+Ma L, Wong WH, and Owen AB. (2012) A sparse transmission disequilibrium test for haplotypes based on Bradley-Terry graphs. /Human Heredity/. Vol. 73, No. 1, 52-61. [http://content.karger.com/produktedb/produkte.asp?DOI=10.1159/000335937 \[online\]][files/sparseTDT.pdf \[preprint\]]
+
+Ma L and Wong WH. (2011) Coupling optional Pólya trees and the two sample problem. 
+/Journal of the American Statistical Association, Theory and Methods/. Vol. 106, No. 496, 1553-1565. [http://www.tandfonline.com/doi/abs/10.1198/jasa.2011.tm10003 \[online\]][http://arxiv.org/pdf/1011.1253.pdf \[arxiv\]]
+
+Ma L, Stein ML, Wang M, Shelton AO, Pfister CA, and Wilder KJ. (2011) 
+A method for unbiased estimation of population abundance along curvy
+margins. /Environmetrics/. Vol. 22, No. 3, 330-339. [http://onlinelibrary.wiley.com/doi/10.1002/env.1053/abstract \[online\]]
+
+Wong WH and Ma L. (2010) Optional Pólya tree and Bayesian inference. 
+/Annals of Statistics/. Vol. 38, No. 3, 1433-1459. 
+[https://doi.org/10.1214/09-AOS755 \[online\]][files/optree.pdf \[pdf\]][https://github.com/MaStatLab/PTT \[R package\]]
+ 
+Ma L, Assimes T, Asadi NB, Iribarren C, Quertermous T, and Wong WH. (2010) 
+An "almost exhaustive" search based sequential permutation method for detecting epistasis 
+in disease association studies. /Genetic Epidemiology/. Vol. 34, No. 5, 434-443. 
+[http://www.ncbi.nlm.nih.gov/pubmed/20583286 \[online\]][Software/sFPgrowth.html \[software\]]
+
+Ma L, Mease D, and Russell D. (2010) A four group cross-over design for
+ measuring irreversible treatments on web search
+ tasks. /Proceedings of HICSS-44/. [http://doi.ieeecomputersociety.org/10.1109/HICSS.2011.11
+ \[online\]]
+
