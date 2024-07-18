@@ -37,7 +37,7 @@ Wang Z, Awaya N, and Ma L. (2024) Generative modeling of conditional densities t
 
 Horiguchi A, Ma L, and Szabo B. (2024) Sampling depth trade-off in function estimation under a two-level design. [http://arxiv.org/abs/2310.02968 \[arxiv\]]
 
-Horiguchi A, Chan C, and Ma L. (2023) A tree perspective on stick-breaking models in covariate-dependent mixtures. [https://arxiv.org/abs/2208.02806 \[arxiv\]]
+Horiguchi A, Chan C, and Ma L. (2024) A tree perspective on stick-breaking models in covariate-dependent mixtures. [https://arxiv.org/abs/2208.02806 \[arxiv\]]
 
 Wang Z, Mao J, and Ma L. (2022) Microbiome compositional analysis with logistic-tree normal models. [https://www.imsi.institute/videos/microbiome-analyses-through-tree-based-models-for-high-dimensional-compositions/ \[*talk*\]][https://vimeo.com/570045756 \[*15-min video*\]][https://arxiv.org/abs/2106.15051 \[arxiv\]][https://github.com/MaStatLab/LTN \[R package\]][https://github.com/MaStatLab/LTN_analysis \[numerical examples\]] /Winner of a student\/postdoc best paper award at 2021 ISBA World Meeting./
 
@@ -47,7 +47,7 @@ Wang Z, Mao J, and Ma L. (2022) Microbiome compositional analysis with logistic-
 
 Awaya N and Ma L. (2024) Unsupervised tree boosting for learning probability distributions. /To appear in Journal of Machine Learning Research./ [https://youtu.be/02nZUxF8EMs?t=1306 \[talk\]][https://arxiv.org/abs/2101.11083 \[arxiv\]][https://github.com/MaStatLab/boostPM \[R package\]] /Winner of a student\/postdoc best paper award at 2021 ISBA World Meeting./
 
-Liu L and Ma L. (2024) Spatial adaptation by Bayesian unsupervised trees. /Accepted to 37th Annual Conference on Learning Theory (COLT 2024)./
+Liu L and Ma L. (2024) Spatial adaptation by Bayesian unsupervised trees. Proceedings of Thirty Seventh Conference on Learning Theory, PMLR 247:3556-3581. [https://proceedings.mlr.press/v247/liu24b.html \[online\]]
 
 Liu R, Li M, and Ma L. (2024) Efficient in-situ image and video compression through probabilistic image representation. /Signal Processing./ Vol. 215, 109268. [https://doi.org/10.1016/j.sigpro.2023.109268 \[online\]][https://arxiv.org/abs/1912.05622 \[arxiv\]][https://github.com/xylimeng/CARP \[Matlab code\]] 
 
