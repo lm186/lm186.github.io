@@ -6,7 +6,6 @@
 - Nonparametric modeling and inference
 - Multi-scale inference
 - Recursive partitioning and tree-related methods
-# - Large-scale hypothesis testing
 - Statistical modeling of biomedical data sets, especially microbiome sequencing data and flow cytometry\n
 
 
@@ -14,17 +13,6 @@ A recent methodological focus of my research is on using multi-scale techniques 
 
 My applied interest focuses on modeling complex data sets from biomedical experiments. In particular, current efforts have been devoted to modeling and analyzing data from microbiome sequencing experiments and flow cytometry.
 
-## /An easy way to find out more about my research is by watching the 15-min videos given by group members that accompany recent papers./
-
-
-## I am most interested in /likelihood-based/ and /Bayesian nonparametric inference/. 
-## Some specific topics of interest are /high dimensional density estimation/ and /two 
-## sample comparison/. Most of my research is motivated by problems in /genetic epidemiological 
-## studies/ of common complex diseases.
-
-## === Industry experience
-## 
-## - Google search evaluation research (Summer 2009)
 
 === Support
 My research group is currently supported by both the NSF (Statistics Program grant DMS-2013930, CDS\&E Program grant DMS-2152999, CAREER Award grant DMS-1749789, Engineering Research Centers grant EEC-2133504) and the NIH (NIGMS grant R01-GM135440).
