@@ -1,0 +1,356 @@
+/* ============================================
+   Li Ma — Academic Homepage
+   Mobile-first responsive stylesheet
+   ============================================ */
+
+/* --- Reset & Base --- */
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 16px;
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Palatino Linotype", Palatino, Georgia, serif;
+  color: #333;
+  background: #fff;
+  line-height: 1.6;
+  -webkit-text-size-adjust: 100%;
+}
+
+/* --- Layout Container --- */
+.container {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 0 1.25rem;
+}
+
+/* --- Navigation --- */
+.site-header {
+  background: #800000; /* UChicago maroon */
+  color: #fff;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.15);
+  margin-bottom: 1.25rem;
+}
+
+.nav-wrapper {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 0 1.25rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.site-name {
+  font-size: 1.25rem;
+  font-weight: 700;
+  padding: 0.75rem 0;
+  color: #fff;
+  text-decoration: none;
+  letter-spacing: 0.02em;
+}
+
+.site-name:hover {
+  opacity: 0.9;
+}
+
+/* Hamburger button (mobile only) */
+.nav-toggle {
+  display: none;
+  background: none;
+  border: none;
+  color: #fff;
+  font-size: 1.5rem;
+  cursor: pointer;
+  padding: 0.5rem;
+  line-height: 1;
+}
+
+.nav-menu {
+  list-style: none;
+  display: flex;
+  gap: 0.25rem;
+}
+
+.nav-menu a {
+  display: block;
+  padding: 0.75rem 0.75rem;
+  color: rgba(255,255,255,0.85);
+  text-decoration: none;
+  font-size: 0.95rem;
+  border-radius: 4px;
+  transition: background 0.2s, color 0.15s;
+}
+
+.nav-menu a:hover,
+.nav-menu a.active {
+  color: #fff;
+  background: rgba(255,255,255,0.15);
+}
+
+.header-link-bar {
+  margin-bottom: 0.75rem;
+}
+
+.header-link-bar .container {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.pdf-link {
+  display: inline-block;
+  padding: 0.45rem 0.85rem;
+  border: 1px solid #d9c8c8;
+  border-radius: 999px;
+  background: #faf5f4;
+  color: #800000;
+  font-size: 0.92rem;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.pdf-link:hover {
+  background: #f3e4e1;
+  text-decoration: none;
+}
+
+/* Mobile nav */
+@media (max-width: 700px) {
+  .nav-toggle {
+    display: block;
+  }
+
+  .nav-menu {
+    display: none;
+    flex-direction: column;
+    width: 100%;
+    padding-bottom: 0.5rem;
+  }
+
+  .nav-menu.open {
+    display: flex;
+  }
+
+  .nav-wrapper {
+    flex-wrap: wrap;
+  }
+
+  .nav-menu a {
+    padding: 0.6rem 0.5rem;
+  }
+
+  .header-link-bar .container {
+    justify-content: flex-start;
+  }
+}
+
+/* --- Main Content --- */
+main {
+  padding: 1.5rem 0 3rem;
+}
+
+main > :first-child {
+  margin-top: 0.75rem;
+}
+
+/* --- Home Profile Card --- */
+.profile {
+  display: flex;
+  gap: 1.75rem;
+  align-items: flex-start;
+  margin-top: 0.5rem;
+  margin-bottom: 1.5rem;
+}
+
+.profile-photo {
+  width: 200px;
+  min-width: 200px;
+  border-radius: 6px;
+}
+
+.profile-info h1 {
+  font-size: 1.75rem;
+  color: #800000;
+  margin-bottom: 0.3rem;
+  border: none;
+}
+
+.profile-info .title {
+  font-size: 1.05rem;
+  margin-bottom: 0.25rem;
+}
+
+.profile-info .affiliation {
+  margin-bottom: 0.75rem;
+}
+
+.profile-info .affiliation a {
+  color: #224b8d;
+}
+
+.contact-block {
+  margin-top: 0.5rem;
+  font-size: 0.95rem;
+}
+
+.contact-block p {
+  margin-bottom: 0.2rem;
+}
+
+@media (max-width: 600px) {
+  .profile {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .profile-photo {
+    width: 180px;
+    min-width: auto;
+  }
+}
+
+/* --- Typography --- */
+h1, h2, h3 {
+  color: #800000;
+  line-height: 1.25;
+}
+
+h1 {
+  font-size: 1.6rem;
+  border-bottom: 2px solid #ddd;
+  padding-bottom: 0.3rem;
+  margin-bottom: 1rem;
+}
+
+h2 {
+  font-size: 1.3rem;
+  border-bottom: 1px solid #ddd;
+  padding-bottom: 0.2rem;
+  margin-top: 1.75rem;
+  margin-bottom: 0.75rem;
+}
+
+h3 {
+  font-size: 1.1rem;
+  margin-top: 1.25rem;
+  margin-bottom: 0.5rem;
+}
+
+p {
+  margin-bottom: 0.8rem;
+}
+
+a {
+  color: #224b8d;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+/* --- Lists --- */
+ul, ol {
+  margin-left: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+li {
+  margin-bottom: 0.3rem;
+}
+
+/* --- Definition-style entries (Bio, Teaching) --- */
+.entry {
+  margin-bottom: 0.5rem;
+  padding-left: 0.5rem;
+}
+
+/* --- Publication list --- */
+.pub-list {
+  list-style: none;
+  margin-left: 0;
+}
+
+.pub-list li {
+  margin-bottom: 0.85rem;
+  padding-left: 1rem;
+  text-indent: -1rem;
+  line-height: 1.45;
+}
+
+.pub-list .venue {
+  font-style: italic;
+}
+
+.pub-list .links {
+  font-size: 0.9rem;
+}
+
+.pub-list .links a {
+  margin-right: 0.35rem;
+}
+
+.pub-highlight {
+  font-weight: bold;
+}
+
+/* --- People page --- */
+.people-section {
+  margin-bottom: 1.5rem;
+}
+
+.people-section ul {
+  list-style: none;
+  margin-left: 0;
+}
+
+.people-section li {
+  padding: 0.25rem 0;
+}
+
+/* --- Footer --- */
+.site-footer {
+  border-top: 1px solid #ddd;
+  padding: 1rem 0;
+  margin-top: 3rem;
+  color: #999;
+  font-size: 0.85rem;
+  text-align: center;
+}
+
+/* --- Utility --- */
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0,0,0,0);
+  border: 0;
+}
+
+/* --- Print --- */
+@media print {
+  .site-header, .nav-toggle {
+    display: none;
+  }
+  main {
+    padding-top: 0;
+  }
+  a[href]::after {
+    content: " (" attr(href) ")";
+    font-size: 0.85em;
+    color: #666;
+  }
+}
