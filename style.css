@@ -219,6 +219,15 @@ body:not(.home-page) main > :first-child {
   color: #4f2f2f;
 }
 
+.hero-affiliation a {
+  color: inherit;
+  text-decoration: none;
+}
+
+.hero-affiliation a:hover {
+  text-decoration: underline;
+}
+
 .hero-affiliation-school {
   font-size: 1.02rem;
   font-weight: 700;
