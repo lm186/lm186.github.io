@@ -222,16 +222,6 @@ body:not(.home-page) main > :first-child {
   gap: 0.75rem;
 }
 
-.mobile-photo-wrap {
-  display: none;
-}
-
-.mobile-profile-photo {
-  width: 140px;
-  border-radius: 16px;
-  box-shadow: 0 14px 28px rgba(83, 42, 42, 0.14);
-}
-
 .button-link {
   display: inline-flex;
   align-items: center;
@@ -305,23 +295,19 @@ body:not(.home-page) main > :first-child {
   .hero {
     grid-template-columns: 1fr;
     grid-template-areas:
+      "photo"
       "copy"
       "contact";
   }
 
   .hero-copy,
+  .hero-photo-wrap,
   .contact-card {
     max-width: 360px;
   }
 
   .hero-photo-wrap {
-    display: none;
-  }
-
-  .mobile-photo-wrap {
-    display: block;
-    margin: 0.25rem 0 0.5rem;
-    text-align: center;
+    width: min(100%, 360px);
   }
 }
 
