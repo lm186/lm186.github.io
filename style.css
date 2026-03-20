@@ -329,7 +329,7 @@ body:not(.home-page) main > :first-child {
   vertical-align: -6px;
 }
 
-@media (max-width: 860px) {
+@media (max-width: 700px) {
   .hero {
     grid-template-columns: 1fr;
     grid-template-areas:
@@ -349,7 +349,7 @@ body:not(.home-page) main > :first-child {
   }
 }
 
-@media (max-width: 600px) {
+@media (max-width: 700px) {
   .hero {
     margin-top: 0.25rem;
   }
