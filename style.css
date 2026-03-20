@@ -317,7 +317,7 @@ body:not(.home-page) main > :first-child {
   }
 
   .profile-photo {
-    width: 100%;
+    width: 50%;
   }
 
   .hero-actions {
