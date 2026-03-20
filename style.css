@@ -193,21 +193,41 @@ body:not(.home-page) main > :first-child {
   max-width: 560px;
 }
 
-.eyebrow {
-  color: #800000;
-  font-size: 0.85rem;
-  font-weight: 700;
-  letter-spacing: 0.11em;
-  text-transform: uppercase;
-  margin-bottom: 0.85rem;
-}
-
 .hero-copy h1 {
   font-size: clamp(2.4rem, 5vw, 3.4rem);
   line-height: 0.98;
   margin-bottom: 1rem;
   border: none;
   padding-bottom: 0;
+}
+
+.hero-title {
+  font-size: 1.1rem;
+  font-weight: 700;
+  color: #5a2020;
+  margin: 0 0 1rem;
+}
+
+.hero-affiliation {
+  display: inline-flex;
+  flex-direction: column;
+  gap: 0.15rem;
+  margin: 0 0 1.1rem;
+  padding: 0.75rem 0.95rem;
+  border-left: 4px solid #800000;
+  background: rgba(128, 0, 0, 0.06);
+  color: #4f2f2f;
+}
+
+.hero-affiliation-school {
+  font-size: 1.02rem;
+  font-weight: 700;
+  letter-spacing: 0.03em;
+}
+
+.hero-affiliation-details {
+  font-size: 0.96rem;
+  color: #6a5252;
 }
 
 .hero-lead {
