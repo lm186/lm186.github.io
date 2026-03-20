@@ -316,6 +316,10 @@ body:not(.home-page) main > :first-child {
     margin-top: 0.25rem;
   }
 
+  .hero-copy h1 {
+    display: none;
+  }
+
   .profile-photo {
     width: 50%;
   }
