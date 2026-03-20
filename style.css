@@ -23,6 +23,18 @@ body {
   -webkit-text-size-adjust: 100%;
 }
 
+.home-page {
+  background:
+    radial-gradient(circle at top left, #f3e9e3 0, #fbf8f6 22rem, #fff 40rem),
+    linear-gradient(180deg, #faf7f4 0, #fff 18rem);
+}
+
+body:not(.home-page) {
+  background:
+    radial-gradient(circle at top left, #f3e9e3 0, #fbf8f6 22rem, #fff 40rem),
+    linear-gradient(180deg, #faf7f4 0, #fff 18rem);
+}
+
 /* --- Layout Container --- */
 .container {
   max-width: 900px;
@@ -132,71 +144,171 @@ main > :first-child {
   margin-top: 0.75rem;
 }
 
-/* --- Home Profile Card --- */
-.profile {
+body:not(.home-page) main.container {
+  max-width: 960px;
+  margin-top: 1rem;
+  padding: 2rem 2rem 2.5rem;
+  background: rgba(255, 255, 255, 0.88);
+  border: 1px solid rgba(128, 0, 0, 0.08);
+  border-radius: 26px;
+  box-shadow: 0 18px 40px rgba(83, 42, 42, 0.08);
+}
+
+body:not(.home-page) main > :first-child {
+  margin-top: 0;
+}
+
+/* --- Homepage --- */
+.hero {
   display: flex;
-  gap: 1.75rem;
+  gap: 2.25rem;
   align-items: flex-start;
-  margin-top: 0.5rem;
-  margin-bottom: 1.5rem;
+  justify-content: space-between;
+  margin: 0.75rem 0 2rem;
 }
 
 .profile-photo {
-  width: 200px;
-  min-width: 200px;
-  border-radius: 6px;
+  width: 100%;
+  max-width: 100%;
+  border-radius: 18px;
+  box-shadow: 0 18px 40px rgba(83, 42, 42, 0.16);
 }
 
-.profile-info h1 {
-  font-size: 1.05rem;
-  color: #333;
-  margin-bottom: 0.1rem;
-  border: none;
+.hero-copy {
+  flex: 1 1 0;
+  max-width: 560px;
+}
+
+.eyebrow {
+  color: #800000;
+  font-size: 0.85rem;
   font-weight: 700;
-  line-height: 1.2;
+  letter-spacing: 0.11em;
+  text-transform: uppercase;
+  margin-bottom: 0.85rem;
 }
 
-.profile-info .title {
-  font-size: 1.05rem;
-  margin-top: 2.25em;
-  margin-bottom: 0.1rem;
-  font-weight: 400;
+.hero-copy h1 {
+  font-size: clamp(2.4rem, 5vw, 3.4rem);
+  line-height: 0.98;
+  margin-bottom: 1rem;
+  border: none;
+  padding-bottom: 0;
 }
 
-.profile-info .affiliation {
-  margin-bottom: 0;
-  line-height: 1.3;
+.hero-lead {
+  font-size: 1.18rem;
+  line-height: 1.65;
+  color: #452f2f;
+  max-width: 48rem;
+  margin-bottom: 1rem;
 }
 
-.profile-info .affiliation a {
-  color: #224b8d;
+.hero-support {
+  font-size: 1rem;
+  color: #5f4d4d;
+  max-width: 43rem;
+  margin-bottom: 1.5rem;
 }
 
-.contact-block {
-  margin-top: 2.5rem;
+.hero-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+}
+
+.button-link {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 2.8rem;
+  padding: 0.7rem 1.1rem;
+  border-radius: 999px;
+  border: 1px solid rgba(128, 0, 0, 0.2);
+  background: rgba(255, 255, 255, 0.72);
+  color: #5a2020;
   font-size: 0.95rem;
+  font-weight: 700;
+  text-decoration: none;
+  box-shadow: 0 8px 24px rgba(83, 42, 42, 0.08);
 }
 
-.contact-block h3 {
+.button-link:hover {
+  text-decoration: none;
+  background: #fff;
+  transform: translateY(-1px);
+}
+
+.button-primary {
+  background: #800000;
+  border-color: #800000;
+  color: #fff;
+}
+
+.button-primary:hover {
+  background: #6b0000;
+  color: #fff;
+}
+
+.button-subtle {
+  background: transparent;
+  box-shadow: none;
+}
+
+.hero-side {
+  flex: 0 0 280px;
+  display: grid;
+  gap: 1rem;
+}
+
+.info-card {
+  padding: 1.25rem 1.35rem;
+  border: 1px solid rgba(128, 0, 0, 0.08);
+  border-radius: 18px;
+  background: rgba(255, 255, 255, 0.88);
+  box-shadow: 0 14px 34px rgba(83, 42, 42, 0.08);
+}
+
+.info-card h2 {
   margin-top: 0;
-  margin-bottom: 0.25rem;
 }
 
-.contact-block p {
-  margin-bottom: 0.1rem;
-  line-height: 1.25;
+.contact-card p:last-child,
+.info-card p:last-child {
+  margin-bottom: 0;
+}
+
+.email-image {
+  width: 150px;
+  vertical-align: -6px;
+}
+
+@media (max-width: 860px) {
+  .hero {
+    flex-direction: column;
+  }
+
+  .hero-side {
+    width: min(100%, 360px);
+  }
 }
 
 @media (max-width: 600px) {
-  .profile {
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
+  .hero {
+    margin-top: 0.25rem;
   }
 
   .profile-photo {
-    width: 180px;
-    min-width: auto;
+    width: 100%;
+  }
+
+  .hero-actions {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .button-link {
+    width: 100%;
   }
 }
 
@@ -227,8 +339,38 @@ h3 {
   margin-bottom: 0.5rem;
 }
 
+body:not(.home-page) h1 {
+  font-size: clamp(2.1rem, 4vw, 2.8rem);
+  line-height: 1.02;
+  border-bottom: none;
+  padding-bottom: 0;
+  margin-bottom: 1.5rem;
+}
+
+body:not(.home-page) h2 {
+  font-size: 0.95rem;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  border-bottom: 1px solid rgba(128, 0, 0, 0.15);
+  padding-bottom: 0.5rem;
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+}
+
+body:not(.home-page) h3 {
+  color: #5a2020;
+  font-size: 1rem;
+  margin-top: 1.5rem;
+  margin-bottom: 0.85rem;
+}
+
 p {
   margin-bottom: 0.8rem;
+}
+
+body:not(.home-page) p {
+  color: #4d4343;
+  line-height: 1.75;
 }
 
 a {
@@ -250,6 +392,10 @@ li {
   margin-bottom: 0.3rem;
 }
 
+body:not(.home-page) li {
+  line-height: 1.55;
+}
+
 /* --- Definition-style entries (Bio, Teaching) --- */
 .entry {
   margin-bottom: 0.5rem;
@@ -267,6 +413,14 @@ li {
   padding-left: 1rem;
   text-indent: -1rem;
   line-height: 1.45;
+}
+
+body:not(.home-page) .pub-list li {
+  margin-bottom: 1rem;
+  padding-left: 1.15rem;
+  text-indent: -1.15rem;
+  line-height: 1.6;
+  color: #433838;
 }
 
 .pub-list .venue {
@@ -290,6 +444,19 @@ li {
   margin-bottom: 1.5rem;
 }
 
+body:not(.home-page) .people-section {
+  margin-bottom: 1.25rem;
+  padding: 1.25rem 1.35rem;
+  border: 1px solid rgba(128, 0, 0, 0.08);
+  border-radius: 18px;
+  background: rgba(255, 255, 255, 0.82);
+  box-shadow: 0 14px 34px rgba(83, 42, 42, 0.06);
+}
+
+body:not(.home-page) .people-section h2 {
+  margin-top: 0;
+}
+
 .people-section ul {
   list-style: none;
   margin-left: 0;
@@ -297,6 +464,27 @@ li {
 
 .people-section li {
   padding: 0.25rem 0;
+}
+
+body:not(.home-page) .people-section li {
+  padding: 0.45rem 0;
+  margin-bottom: 0;
+  border-bottom: 1px solid rgba(128, 0, 0, 0.08);
+}
+
+body:not(.home-page) .people-section li:last-child {
+  border-bottom: none;
+}
+
+/* --- Teaching page --- */
+.teaching-list li {
+  margin-bottom: 0.4rem;
+  line-height: 1.4;
+}
+
+body:not(.home-page) .teaching-list li {
+  margin-bottom: 0.55rem;
+  line-height: 1.55;
 }
 
 /* --- Footer --- */
@@ -333,5 +521,12 @@ li {
     content: " (" attr(href) ")";
     font-size: 0.85em;
     color: #666;
+  }
+}
+
+@media (max-width: 600px) {
+  body:not(.home-page) main.container {
+    padding: 1.5rem 1.15rem 2rem;
+    border-radius: 20px;
   }
 }
