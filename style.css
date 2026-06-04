@@ -496,6 +496,104 @@ body:not(.home-page) li {
 }
 
 /* --- Publication list --- */
+.publication-tools {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0.85rem;
+  margin: -0.15rem 0 1.3rem;
+  padding: 0.85rem 1rem;
+  border: 1px solid var(--border);
+  border-radius: 18px;
+  background: linear-gradient(135deg, rgba(255, 255, 255, 0.92), rgba(232, 240, 246, 0.82));
+  box-shadow: 0 12px 28px rgba(56, 80, 106, 0.08);
+}
+
+.publication-switcher {
+  display: inline-flex;
+  gap: 0.3rem;
+  padding: 0.25rem;
+  border: 1px solid var(--border);
+  border-radius: 999px;
+  background: rgba(255, 255, 255, 0.8);
+}
+
+.publication-switch {
+  min-height: 2.35rem;
+  padding: 0.45rem 0.95rem;
+  border: 0;
+  border-radius: 999px;
+  background: transparent;
+  color: var(--muted);
+  cursor: pointer;
+  font-family: inherit;
+  font-size: 0.95rem;
+  font-weight: 700;
+  transition: background 0.18s, color 0.18s, box-shadow 0.18s;
+}
+
+.publication-switch:hover,
+.publication-switch:focus-visible {
+  color: var(--accent-strong);
+}
+
+.publication-switch:focus-visible {
+  outline: 2px solid var(--accent);
+  outline-offset: 2px;
+}
+
+.publication-switch.is-active {
+  background: var(--accent-strong);
+  color: #fff;
+  box-shadow: 0 8px 18px rgba(25, 55, 83, 0.18);
+}
+
+.publication-help {
+  flex: 1 1 18rem;
+  margin: 0;
+  color: var(--muted);
+  font-size: 0.95rem;
+  line-height: 1.45;
+}
+
+.publication-view[hidden] {
+  display: none;
+}
+
+.publication-topic {
+  margin-top: 1.25rem;
+  padding: 1rem 1.1rem 0.3rem;
+  border: 1px solid var(--border);
+  border-radius: 18px;
+  background: var(--surface-muted);
+}
+
+body:not(.home-page) .publication-topic h3 {
+  margin-top: 0;
+}
+
+.publication-topic .pub-list li,
+body:not(.home-page) .publication-topic .pub-list li {
+  padding-left: 0;
+  text-indent: 0;
+}
+
+.pub-year-tag {
+  display: inline-flex;
+  align-items: center;
+  margin-right: 0.45rem;
+  padding: 0.1rem 0.45rem;
+  border: 1px solid var(--accent-soft);
+  border-radius: 999px;
+  background: rgba(63, 98, 127, 0.1);
+  color: var(--accent-strong);
+  font-size: 0.76rem;
+  font-weight: 700;
+  line-height: 1.3;
+  text-indent: 0;
+}
+
 .pub-list {
   list-style: none;
   margin-left: 0;
@@ -621,5 +719,17 @@ body:not(.home-page) .teaching-list li {
   body:not(.home-page) main.container {
     padding: 1.5rem 1.15rem 2rem;
     border-radius: 20px;
+  }
+
+  .publication-tools {
+    align-items: stretch;
+  }
+
+  .publication-switcher {
+    width: 100%;
+  }
+
+  .publication-switch {
+    flex: 1 1 0;
   }
 }
