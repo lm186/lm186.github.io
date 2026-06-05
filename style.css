@@ -594,6 +594,18 @@ body:not(.home-page) .publication-topic .pub-list li {
   text-indent: 0;
 }
 
+.publication-year-heading,
+body:not(.home-page) .publication-year-heading {
+  margin: 1.35rem 0 0.85rem;
+  font-size: 1rem;
+}
+
+.publication-year-heading .pub-year-tag {
+  margin-right: 0;
+  padding: 0.12rem 0.58rem;
+  font-size: 0.82rem;
+}
+
 .pub-list {
   list-style: none;
   margin-left: 0;
