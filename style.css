@@ -561,7 +561,8 @@ body:not(.home-page) li {
   display: none;
 }
 
-.publication-topic {
+.publication-topic,
+#publications-by-year {
   margin-top: 1.25rem;
   padding: 1rem 1.1rem 0.3rem;
   border: 1px solid var(--border);
@@ -574,7 +575,9 @@ body:not(.home-page) .publication-topic h3 {
 }
 
 .publication-topic .pub-list li,
-body:not(.home-page) .publication-topic .pub-list li {
+body:not(.home-page) .publication-topic .pub-list li,
+.pub-list-with-year-tags li,
+body:not(.home-page) .pub-list-with-year-tags li {
   padding-left: 0;
   text-indent: 0;
 }
@@ -592,18 +595,6 @@ body:not(.home-page) .publication-topic .pub-list li {
   font-weight: 700;
   line-height: 1.3;
   text-indent: 0;
-}
-
-.publication-year-heading,
-body:not(.home-page) .publication-year-heading {
-  margin: 1.35rem 0 0.85rem;
-  font-size: 1rem;
-}
-
-.publication-year-heading .pub-year-tag {
-  margin-right: 0;
-  padding: 0.12rem 0.58rem;
-  font-size: 0.82rem;
 }
 
 .pub-list {
