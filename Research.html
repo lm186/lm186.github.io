@@ -184,6 +184,7 @@
     var byYear = document.getElementById("publications-by-year");
     var byTopic = document.getElementById("publications-by-topic");
     var switches = Array.prototype.slice.call(document.querySelectorAll("[data-publication-view]"));
+    var publicationViewStorageKey = "research-publication-view";
 
     if (!byYear || !byTopic || switches.length === 0) {
       return;
@@ -283,12 +284,31 @@
       });
     }
 
+    function getSavedView() {
+      try {
+        var savedView = window.localStorage.getItem(publicationViewStorageKey);
+        return savedView === "year" || savedView === "topic" ? savedView : "topic";
+      } catch (error) {
+        return "topic";
+      }
+    }
+
+    function saveView(view) {
+      try {
+        window.localStorage.setItem(publicationViewStorageKey, view);
+      } catch (error) {
+        // Keep the switcher functional when browser storage is unavailable.
+      }
+    }
+
     buildTopicView();
-    showView("topic");
+    showView(getSavedView());
 
     switches.forEach(function (button) {
       button.addEventListener("click", function () {
-        showView(button.getAttribute("data-publication-view"));
+        var view = button.getAttribute("data-publication-view");
+        showView(view);
+        saveView(view);
       });
     });
   })();
